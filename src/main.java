@@ -5,6 +5,7 @@ public class main
     public static void main(String[] args)
     {
         //prepei na ftiaksw ta symbols
+        //figure out what i was thinking with userCounter variable
         String one [] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"} ;
         String[] letters = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"} ;
         String[] symbols = {" ", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "{", "}", ";", ":", "<", ">", ",", "?", "[", "]", "."} ;
@@ -84,6 +85,7 @@ public class main
             {
                 break ;
             }
+            System.out.println(userCounter) ;
         }
         System.out.println(newPhrase) ;
     }
