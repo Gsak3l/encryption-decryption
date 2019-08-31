@@ -32,6 +32,7 @@ public class EnglishLetters
     }
     void randomCombinations()
     {
+        System.out.println("COUNTER : " + counter) ;
         counter = 0 ;
         while(counter != 456976)
         {
