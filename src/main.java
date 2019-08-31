@@ -4,20 +4,7 @@ public class main
 {
     public static void main(String[] args)
     {
-        String yyyEnc[] = new String[456976] ;
-        while(counter != 456976)
-    {
-        int num = (int)(1+ Math.random() * 456975) ;
-        if(nonEnc[num].equals("DONE!"))
-        {
-            continue ;
-        }
-        else
-        {
-            yyyEnc[counter] = nonEnc[num] ;
-            counter ++ ;
-        }
-    }
+        EnglishLetters newWord = new EnglishLetters() ;
         for(int i = 0 ; i < 456976 ; i ++)
         {
             System.out.println(yyyEnc[i]) ;
