@@ -21,8 +21,7 @@ public class EnglishLetters
                 {
                     for(int l = 0 ; l < 26 ; l ++)
                     {
-                        String tempString = letters[i] + letters[j] + letters[k] + letters[l] ;
-                        nonEnc[counter] = tempString ;
+                        nonEnc[counter] = letters[i] + letters[j] + letters[k] + letters[l] ;
                         counter ++ ;
                     }
                 }
@@ -32,7 +31,6 @@ public class EnglishLetters
     }
     void randomCombinations()
     {
-        System.out.println("COUNTER : " + counter) ;
         counter = 0 ;
         while(counter != 456976)
         {
@@ -44,11 +42,49 @@ public class EnglishLetters
             else
             {
                 yyyEnc[counter] = nonEnc[num] ;
-                nonEnc[num] = "DONE!" ;
                 counter ++ ;
             }
         }
-        printyyyEnc() ;
+    }
+    void encryptText(String oldPhrase)
+    {
+        String newPhrase = "" ;
+        int userCounter = 0 ;
+        while(true)
+        {
+            int place ;
+            for(int i = 0 ; i < 26 ; i ++)
+            {
+                if(counter < oldPhrase.length())
+                {
+                    if(letters[i].equals(oldPhrase.substring(counter, counter + 1)) || letters[i].toUpperCase().equals(oldPhrase.substring(counter, counter + 1)))
+                    {
+                        place = 26 * userCounter  + i ;
+                        counter ++ ;
+                        newPhrase += yyyEnc[place] ;
+                    }
+                }
+                else if(counter == oldPhrase.length())
+                {
+                    if(letters[i].equals(oldPhrase.substring(counter)) || letters[i].toUpperCase().equals(oldPhrase.substring(counter)))
+                    {
+                        place = 26 * userCounter  + i ;
+                        counter ++ ;
+                        newPhrase += yyyEnc[place] ;
+                    }
+                }
+            }
+            userCounter += 26 ;
+            if(userCounter  == 17576)
+            {
+                userCounter = 0 ;
+            }
+            if(oldPhrase.length() == counter)
+            {
+                break ;
+            }
+            System.out.println(userCounter) ;
+        }
     }
     void printyyyEnc()
     {
