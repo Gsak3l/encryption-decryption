@@ -77,6 +77,7 @@ public class main
                     }
                 }
             }
+            userCounter += 26 ;
             if(userCounter  == 17576)
             {
                 userCounter = 0 ;
