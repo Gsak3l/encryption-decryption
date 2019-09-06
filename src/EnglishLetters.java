@@ -94,3 +94,5 @@ public class EnglishLetters
         }
     }
 }
+//this project is closed for now, i cannot make my encryption strong enough
+//with the tools that i want to use :( 
