@@ -11,5 +11,6 @@ public class main
         //Main Object
         EnglishLetters newWord = new EnglishLetters() ;
         newWord.encryptText(oldPhrase) ;
+		//this project is over!
     }
 }
