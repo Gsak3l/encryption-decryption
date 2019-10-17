@@ -93,6 +93,12 @@ public class EnglishLetters
             System.out.println(i + 1 + " " + yyyEnc[i]) ;
         }
     }
+
+    void print(){
+    	for (int i=0; i<5; i++){
+    		System.out.println(i);
+    	}
+    }
 }
 //this project is closed for now, i cannot make my encryption strong enough
 //with the tools that i want to use :( 
