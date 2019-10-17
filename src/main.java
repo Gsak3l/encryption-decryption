@@ -13,4 +13,8 @@ public class main
         newWord.encryptText(oldPhrase) ;
 		//this project is over!
     }
+
+    public static void oldPap(){
+    	System.out.println("geia");
+    }
 }
