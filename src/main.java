@@ -14,7 +14,11 @@ public class main
 		//this project is over!
     }
 
+
     public void argP(){
     	System.out.println("GEIA SOY KOKLA");
+    }
+    public static void oldPap(){
+    	System.out.println("geia");
     }
 }
