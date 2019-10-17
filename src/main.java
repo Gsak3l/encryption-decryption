@@ -13,4 +13,8 @@ public class main
         newWord.encryptText(oldPhrase) ;
 		//this project is over!
     }
+
+    public void argP(){
+    	System.out.println("GEIA SOY KOKLA");
+    }
 }
